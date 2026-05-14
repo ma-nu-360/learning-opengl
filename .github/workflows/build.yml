@@ -1,0 +1,30 @@
+name: Build
+on:
+  pull_request:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-slim
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v6
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y \
+          gcc \
+          make \
+          cmake \
+          libglfw3-dev \
+          libgl1-mesa-dev
+
+    - name: Make build script executable
+      run: chmod +x scripts/build.sh
+    
+    - name: Build
+      run: ./scripts/build.sh
