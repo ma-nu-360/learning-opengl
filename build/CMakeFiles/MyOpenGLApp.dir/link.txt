@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/MyOpenGLApp.dir/link.d CMakeFiles/MyOpenGLApp.dir/src/main.c.o CMakeFiles/MyOpenGLApp.dir/src/glad.c.o -o MyOpenGLApp   -L/home/blbo/Documents/coding/irgendwas/lib  -Wl,-rpath,/home/blbo/Documents/coding/irgendwas/lib /usr/lib64/libglfw.so.3.4 -lGL
