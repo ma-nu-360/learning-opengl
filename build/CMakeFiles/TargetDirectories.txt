@@ -1,0 +1,3 @@
+/home/blbo/Documents/coding/irgendwas/build/CMakeFiles/MyOpenGLApp.dir
+/home/blbo/Documents/coding/irgendwas/build/CMakeFiles/edit_cache.dir
+/home/blbo/Documents/coding/irgendwas/build/CMakeFiles/rebuild_cache.dir

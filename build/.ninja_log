@@ -1,0 +1,12 @@
+# ninja log v6
+1	18	1778720849209679850	CMakeFiles/MyOpenGLApp.dir/src/logger/logger.c.o	26a06ad9809eb8cf
+1	30	1778720849210841535	CMakeFiles/MyOpenGLApp.dir/src/shader_mgmt/shader_mgmt.c.o	198e03f7fdacf869
+1	28	1778720849211168044	CMakeFiles/MyOpenGLApp.dir/src/window_mgmt/window_mgmt.c.o	834a45bdd45a0259
+1	80	1778720849211330093	CMakeFiles/MyOpenGLApp.dir/src/main.c.o	1e3c03bce838396b
+1	72	1778703408173149408	CMakeFiles/MyOpenGLApp.dir/src/glad.c.o	341af3ed376c2e0e
+80	107	1778720849289164227	MyOpenGLApp	1784a1092f40bdb9
+0	20	1778720962595324048	build.ninja	8800e81917147f64
+1	20	1778720849210989365	CMakeFiles/MyOpenGLApp.dir/src/utils/utils.c.o	f9782719fb9f9fa7
+1	29	1778720962610094404	CMakeFiles/MyOpenGLApp.dir/src/window_mgmt/window_mgmt.c.o	834a45bdd45a0259
+1	83	1778720962610982647	CMakeFiles/MyOpenGLApp.dir/src/main.c.o	1e3c03bce838396b
+83	111	1778720962692660493	MyOpenGLApp	1784a1092f40bdb9
