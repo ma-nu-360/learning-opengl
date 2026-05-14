@@ -18,6 +18,8 @@ jobs:
       run: |
         sudo apt update
         sudo apt install -y \
+          gcc \
+          make \
           cmake \
           libglfw3-dev \
           libgl1-mesa-dev
