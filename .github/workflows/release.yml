@@ -33,7 +33,7 @@ jobs:
     - name: Create tar archive
       run: |
         mkdir release
-        tar -czf release/MyOpenGLApp.tar.gz -C build/MyOpenGLApp
+        tar -czf release/MyOpenGLApp.tar.gz -C build MyOpenGLApp
     
     - name: Create GitHub release
       uses: softprops/action-gh-release@v3
