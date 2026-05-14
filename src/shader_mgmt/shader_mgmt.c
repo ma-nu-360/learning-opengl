@@ -30,11 +30,9 @@ unsigned int smgmtCreateFragmentShader( const char* source) {
 }
 
 unsigned int smgmtCreateShader(         const char* source, GLenum type) {
-    char* shaderSource = mutilsReadFile(source);
     unsigned int shader = glCreateShader(type);
-    glShaderSource(shader, 1, (const char**)&shaderSource, NULL);
+    glShaderSource(shader, 1, &source, NULL);
     glCompileShader(shader);
-    free(shaderSource);
     int success;
     char infoLog[512];
     glGetShaderiv(shader, GL_COMPILE_STATUS, &success);

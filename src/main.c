@@ -2,6 +2,8 @@
 #include "utils/utils.h"
 #include "shader_mgmt/shader_mgmt.h"
 #include <cglm/cglm.h>
+#include "shaders/fragment.glsl.h"
+#include "shaders/vertex.glsl.h"
 
 int main() {
     WMGMTwindow* window = wmgmtInitWindow("Title", 800, 600);
@@ -12,7 +14,7 @@ int main() {
          0.0f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
     };
 
-    unsigned int shaderProgram = smgmtCreateProgram("src/shaders/vertex.glsl", "src/shaders/fragment.glsl");
+    unsigned int shaderProgram = smgmtCreateProgram((const char*)src_shaders_vertex_glsl, (const char*)src_shaders_fragment_glsl);
     if (!shaderProgram) return 1;
     unsigned int vao = smgmtCreateVertexArrayObject();
     if (!vao) return 1;
