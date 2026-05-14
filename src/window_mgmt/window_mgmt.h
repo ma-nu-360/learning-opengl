@@ -2,6 +2,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct {
     GLFWwindow* window;
