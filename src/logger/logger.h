@@ -2,6 +2,7 @@
 #define LOGGER_H
 
 #include <stdio.h>
+#include <stdbool.h>
 
 enum ELogLevel {
     LOG_LEVEL_INFO,

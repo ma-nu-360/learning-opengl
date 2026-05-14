@@ -4,6 +4,7 @@
 #include "logger/logger.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 char* mutilsReadFile(const char* location);
 
