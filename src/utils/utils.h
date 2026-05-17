@@ -1,11 +1,3 @@
-#ifndef M_UTILS_H
-#define M_UTILS_H "M_UTILS_H"
+#include <cglm/cglm.h>
 
-#include "logger/logger.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdbool.h>
-
-char* mutilsReadFile(const char* location);
-
-#endif
+void mutilsHexToRGB(vec3 vec, const char* hex);

@@ -1,1 +1,1 @@
-find src -type f \( -name "*.c" -o -name "*.h" -o -name "*.glsl" \) ! -path "src/glad.c" | xargs wc -l
+find src -type f \( -name "*.c" -o -name "*.h" -o -name "*.glsl" \) ! -path "src/glad.c" ! -path "src/stb_image.h" | xargs wc -l

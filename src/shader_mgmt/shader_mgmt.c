@@ -43,23 +43,3 @@ unsigned int smgmtCreateShader(         const char* source, GLenum type) {
     }
     return shader;
 }
-
-unsigned int smgmtCreateVertexBufferObject(float* data, unsigned int vertexCount, unsigned int offset, unsigned int stride) {
-    unsigned int vbo;
-    glGenBuffers(1, &vbo);
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(float) * stride * vertexCount, data, GL_STATIC_DRAW);
-
-    glVertexAttribPointer(0, vertexCount, GL_FLOAT, GL_FALSE, stride * sizeof(float), NULL);
-    glEnableVertexAttribArray(0);
-
-    glVertexAttribPointer(1, vertexCount, GL_FLOAT, GL_FALSE, stride * sizeof(float), (void*)(offset * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    return vbo;
-}
-
-unsigned int smgmtCreateVertexArrayObject() {
-    unsigned int vao;
-    glGenVertexArrays(1, &vao);
-    return vao;
-}
